@@ -8,7 +8,7 @@ namespace CSharpPrograms
     public class CSharpPrograms
     {
         [TestMethod]
-        public void ProgramToFindTheOccuranceOfString()
+        public void Program1ToFindTheOccuranceOfString()
         {
             string name = "Sandeep";
             Dictionary<char,int> dict = new Dictionary<char, int>();
@@ -27,7 +27,7 @@ namespace CSharpPrograms
         }
 
         [TestMethod]
-        public void ProgramToReverseEachWord()
+        public void Program2ToReverseEachWord()
         {
             string value = "Hello iam good today";
 
@@ -50,7 +50,7 @@ namespace CSharpPrograms
         }
 
         [TestMethod]
-        public void ProgramToSortAnArray()
+        public void Program3ToSortAnArray()
         {
 
             int[] A = { 1, 20, 5, 3 };
@@ -80,12 +80,41 @@ namespace CSharpPrograms
         }
 
         [TestMethod]
-        public void ProgramToRemoveWhiteSpace()
+        public void Program4ToRemoveWhiteSpace()
         {
             string name= "Iam Anju";
             Console.WriteLine(name.Replace(" ",String.Empty));
 
-        }        
+        }
+
+        [TestMethod]
+        public void Program5ToPrintAsteriskinPattern()
+        {
+            for(int i = 1;i<=5;i++)
+            {
+                for(int j=1;j<=i;j++)
+                {
+                    Console.Write("*");
+                }
+                Console.Write("\n");
+            }
+        }
+        [TestMethod]
+        public void Program6ToReverseNumber()
+        {
+            int num = 48;
+            int rev = 0;
+            int rem;
+            while(num!=0)
+            {
+                rem = num % 10;
+                rev = rev * 10+rem;
+                num = num / 10;
+            }
+            Console.Write(rev);
+
+        }
+
     }
 }
 
